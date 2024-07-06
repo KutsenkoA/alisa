@@ -1,0 +1,12 @@
+.menu {
+  position: fixed;
+  font-size: 2rem;
+  font-weight: 100;
+  padding: 0 0 0 2rem;
+}
+
+.home {
+  display: block;
+  margin-block-end: 2rem;
+  color: #fff;
+}
