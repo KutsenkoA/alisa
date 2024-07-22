@@ -1,0 +1,26 @@
+.section {
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.inter {
+  width: 60%;
+  align-items: center;
+  padding: 1rem;
+
+  @media (max-width: 768px) {
+    width: 95%;
+    margin-bottom: 5rem;
+  }
+}
+
+.interImages {
+  width: 100%;
+  padding: 1rem;
+}
+
+.interVideo {
+  width: 100%;
+}

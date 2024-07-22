@@ -1,0 +1,45 @@
+.sheep {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  left: 50%;
+  transform: translate(calc(-50%), 0);
+}
+
+.readMoreContainer {
+  display: flex;
+  align-items: flex-end;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  color: white;
+  gap: .5rem;
+  text-decoration: none;
+  font-size: var(--font-size-m)
+}
+
+.readMoreContainer:hover {
+  background: #adadad2b;
+}
+
+.dash {
+  border-top: 1px solid white;
+  width: 10rem;
+  display: block;
+  height: 8px;
+  transform: translate(10px, 0);
+}
+
+.readMoreE1 {
+  font-size: 15rem;
+  line-height: .72;
+  width: 220px;
+}
+
+@media (max-width: 768px) {
+  .readMore, .dash, .readMoreArrow {
+    display: none;
+  }
+}

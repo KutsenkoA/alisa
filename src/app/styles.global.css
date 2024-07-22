@@ -1,0 +1,18 @@
+body {
+  margin: 0;
+  overflow-x: hidden;
+
+  --color-accent: crimson;
+  --contact-item-color: #aaa;
+  --contact-item-color-hover: #000;
+  --mobile-menu-background-color: #d3d3d3db;
+  --menu-width: 18rem;
+  --menu-left-margin: 2rem;
+  --font-size: 0.7rem;
+  --font-size-m: 0.8rem;
+  --font-size-xl: 2rem;
+}
+
+* {
+  box-sizing: border-box;
+}

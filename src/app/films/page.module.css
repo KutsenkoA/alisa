@@ -1,0 +1,15 @@
+.section {
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.youtubeVideo {
+  display: block;
+  padding: 1rem;
+  width: 980px;
+  aspect-ratio: 16 / 9;
+  max-width: 100%;
+}

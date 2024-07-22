@@ -1,6 +1,6 @@
 .page {
   text-decoration: none;
-  color: #fff;
+  color: var(--menu-item-color);
 
   & div:first-child {
     margin-block-end: 0.8rem;
@@ -8,7 +8,7 @@
 
   & ul {
     padding-inline-start: 0;
-    font-size: 0.8rem;
+    font-size: var(--font-size-m);
     font-weight: 400;
     list-style: none;
 
@@ -17,12 +17,17 @@
 
       & a {
         text-decoration: none;
-        color: #fff;
+        color: var(--menu-item-color);
+
+        &:hover {
+          color: var(--menu-active-color);
+        }
       }
     }
   }
 }
 
 .active {
-  color: crimson !important;
+  color: var(--menu-active-color) !important;
+  font-weight: 600;
 }

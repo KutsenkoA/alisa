@@ -1,0 +1,124 @@
+.section {
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.systemContainer {
+  background: url(/spaces/systematic-order/system.jpg) no-repeat center;
+  width: 95%;
+  height: calc(100vh - 10rem);
+  background-size: contain;
+  display: grid;
+  place-items: center;
+  margin: 5rem;
+}
+
+.text1 {
+  width: 20rem;
+  color: var(--color-accent);
+  font-size: var(--font-size-m);
+  font-weight: 600;
+  hyphens: auto;
+
+  @media (max-width: 768px) {
+    font-size: var(--font-size);
+    width: 14rem;
+  }
+}
+
+.backgroundContainer {
+  background: url(/spaces/systematic-order/background.jpg) no-repeat center;
+  background-size: cover;
+  width: 100%;
+  height: 1080px;
+  display: grid;
+  margin: 5rem;
+  place-items: center;
+}
+
+.video {
+  width: 50%;
+  margin: 5rem;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    margin: 0;
+    padding: 1rem 2rem;
+  }
+}
+
+.imagePlan {
+  width: 100%;
+  padding: 2rem 2rem 2rem calc(var(--menu-width) + 13rem);
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+.imagePlanM {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 2rem;
+
+  @media (min-width: 769px) {
+    display: none;
+  }
+}
+
+.imageElevation {
+  width: 100vw;
+  padding: 10rem 0rem 0rem 0rem;
+}
+.imageCollage {
+  width: 100%;
+  box-sizing: border-box;
+  padding:10rem 2rem 2rem calc(var(--menu-width) + 5rem);
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
+.imageCollageM {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10rem 2rem 2rem 2rem;
+  display: none;
+
+  @media (max-width: 769px) {
+    display: block;
+    padding: 2rem;
+  }
+}
+.imageMap {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 2rem 2rem 2rem calc(var(--menu-width) + 2rem);
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+
+}
+.imageMapM {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 2rem;
+  display: none;
+
+  @media (max-width: 769px) {
+    display: block;
+  }
+}
+
+.imageCut {
+  display: none;
+
+  @media (max-width: 768px) {
+    display: block;
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+}

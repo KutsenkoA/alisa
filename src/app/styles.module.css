@@ -3,3 +3,25 @@
   color: #fff;
   font-size: 10px;
 }
+
+.footer {
+  position: fixed;
+  bottom: 2rem;
+  left: var(--menu-left-margin);
+  font-size: var(--font-size-m);
+
+  & a {
+    font-size: var(--font-size-m);
+    font-weight: 400;
+    color: var(--contact-item-color);
+    text-decoration: none;
+
+    &:hover {
+      color: var(--contact-item-color-hover);
+    }
+  }
+}
+
+.white {
+  --contact-item-color-hover: #fff;
+}

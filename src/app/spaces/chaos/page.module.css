@@ -1,0 +1,120 @@
+.section {
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.arrowsContainer {
+  background: url(/spaces/chaos/arrows.jpg) no-repeat center;
+  width: 95%;
+  height: calc(100vh - 10rem);
+  background-size: contain;
+  display: grid;
+  place-items: center;
+  margin: 5rem;
+
+  @media (max-width: 768px) {
+    background-image: url(/spaces/chaos/arrows_mobile.jpg);
+
+  }
+}
+
+.text1 {
+  width: 20rem;
+  color: var(--color-accent);
+  font-size: var(--font-size-m);
+  font-weight: 600;
+  hyphens: auto;
+
+  @media (max-width: 768px) {
+    font-size: var(--font-size);
+    width: 14rem;
+  }
+}
+
+
+.videoSingle {
+  width: 980px;
+  max-width: 100%;
+  padding: 1rem 2rem;
+}
+
+.imagePlan {
+  width: 100%;
+  padding: 2rem 2rem 2rem calc(var(--menu-width) + 2rem);
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
+.imagePlanM {
+  width: 100%;
+  padding: 2rem;
+  display: none;
+
+  @media (max-width: 768px) {
+    display: block;
+  }
+}
+
+.imageElevation {
+  width: 100vw;
+  padding: 10rem 0rem 0rem 0rem;
+}
+
+.imageCollage {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10rem 2rem 2rem calc(var(--menu-width) + 2rem);
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
+.imageCollageM {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10rem 2rem 2rem 2rem;
+  display: none;
+
+  @media (max-width: 769px) {
+    display: block;
+    padding: 10rem 1rem 1rem 1rem;
+  }
+}
+
+
+.imageMap {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 2rem 2rem 2rem calc(var(--menu-width) + 2rem);
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
+.imageMapM {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 2rem;
+  display: none;
+
+  @media (max-width: 769px) {
+    display: block;
+  }
+}
+
+.imageCut {
+  display: none;
+
+  @media (max-width: 768px) {
+    display: block;
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+}
