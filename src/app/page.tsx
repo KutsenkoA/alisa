@@ -3,7 +3,10 @@ import Link from "next/link";
 import Script from "next/script";
 import style from "./page.module.css";
 
-export const metadata: Metadata = {};
+export const metadata: Metadata = {
+  title: "Alisa Kutsenko",
+  description: "...",
+};
 
 export default function Page() {
   return (

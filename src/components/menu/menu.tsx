@@ -155,6 +155,10 @@ export function Menu() {
             },
           ]}
         />
+
+        <Link href={"/information"} className={style.information}>
+          Info
+        </Link>
       </div>
     </nav>
   );
