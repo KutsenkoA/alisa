@@ -42,4 +42,9 @@
   .readMore, .dash, .readMoreArrow {
     display: none;
   }
+
+  .readMoreE1 {
+    font-size: 12rem;
+    width: 177px;
+  }
 }

@@ -1,5 +1,6 @@
 .menu {
   --menu-item-color: black;
+  --menu-icons-color: var(--menu-item-color);
   --menu-active-color: var(--color-accent);
   --menu-animation-duration: 0.6s;
 
@@ -11,23 +12,41 @@
   width: var(--menu-width);
   transition: width var(--menu-animation-duration);
 
-  @media (max-width: 768px) {
+  @media (max-width: 1520px) {
     --menu-item-color: black;
     width: 0;
-    height: 100%;
+    height: 100vh;
     background: var(--mobile-menu-background-color);
   }
 }
 
 .menuContainerOpened {
-  @media (max-width: 768px) {
-    width: 100%;
+  overflow: auto;
+
+  @media (max-width: 1520px) {
+    width: 22rem;
+    max-width: 100vw;
     backdrop-filter: blur(5px);
 
     .icons {
+      --menu-icons-color: var(--menu-item-color);
+
       width: 100%;
       padding-inline-end: 1rem;
     }
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+
+}
+
+.white {
+  --menu-icons-color: #fff;
+
+  @media (min-width: 1521px) {
+    --menu-item-color: #fff;
   }
 }
 
@@ -35,7 +54,7 @@
   margin-inline: 1rem;
   overflow: hidden;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1520px) {
     //display: none;
   }
 }
@@ -52,20 +71,20 @@
   gap: 1rem;
   padding: 1rem;
   margin-block-end: 1.3rem;
-  color: var(--menu-item-color);
+  color: var(--menu-icons-color);
   transition: width var(--menu-animation-duration);
 }
 
 .homeIcon {
   display: block;
-  color: var(--menu-item-color);
+  color: currentColor;
 }
 
 .menuIcon {
   cursor: pointer;
   display: none;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1520px) {
     display: block;
   }
 }
@@ -74,13 +93,9 @@
   cursor: pointer;
   display: none;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1520px) {
     display: block;
   }
-}
-
-.white {
-  --menu-item-color: #fff;
 }
 
 .hidden {

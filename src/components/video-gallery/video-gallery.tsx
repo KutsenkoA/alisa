@@ -32,10 +32,12 @@ export function VideoGallery(props: {
           <source src={props.videoSources[activeVideoIndex]} />
         </video>
 
-        <div className={style.arrowButtons}>
-          <button onClick={setPreviousVideo}>&#10229;</button>
-          <button onClick={setNextVideo}>&#10230;</button>
-        </div>
+        {props.videoSources.length > 1 ? (
+          <div className={style.arrowButtons}>
+            <button onClick={setPreviousVideo}>&#10229;</button>
+            <button onClick={setNextVideo}>&#10230;</button>
+          </div>
+        ) : null}
       </div>
     </div>
   );
