@@ -1,4 +1,10 @@
+import { Metadata } from "next";
 import style from "./page.module.css";
+
+export const metadata: Metadata = {
+  title: "Alisa Kutsenko - Home",
+  description: "...",
+};
 
 export default function Page() {
   const setupImages = new Array(15)

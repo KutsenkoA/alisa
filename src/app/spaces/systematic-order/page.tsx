@@ -1,5 +1,12 @@
 import { VideoGallery } from "@alisa/components";
+import { Metadata } from "next";
 import style from "./page.module.css";
+
+export const metadata: Metadata = {
+  title: "Alisa Kutsenko - Systematic Order",
+  description: "...",
+};
+
 export default function Page() {
   return (
     <section className={style.section}>

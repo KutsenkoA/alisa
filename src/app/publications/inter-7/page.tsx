@@ -1,4 +1,11 @@
+import { Metadata } from "next";
 import style from "./page.module.css";
+
+export const metadata: Metadata = {
+  title: "Alisa Kutsenko - Motion After Land",
+  description: "...",
+};
+
 export default function Page() {
   const interImages = new Array(11)
     .fill(0)

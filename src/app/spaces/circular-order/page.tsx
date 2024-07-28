@@ -1,5 +1,11 @@
 import { VideoGallery } from "@alisa/components";
+import { Metadata } from "next";
 import style from "./page.module.css";
+
+export const metadata: Metadata = {
+  title: "Alisa Kutsenko - Circular Order",
+  description: "...",
+};
 
 export default function Page() {
   return (

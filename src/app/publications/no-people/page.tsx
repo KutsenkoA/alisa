@@ -1,4 +1,10 @@
+import { Metadata } from "next";
 import style from "./page.module.css";
+
+export const metadata: Metadata = {
+  title: "Alisa Kutsenko - No People Here Apart From Myself",
+  description: "...",
+};
 
 export default function Page() {
   const bookImages = new Array(21)

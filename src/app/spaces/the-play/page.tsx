@@ -1,4 +1,11 @@
+import { Metadata } from "next";
 import style from "./page.module.css";
+
+export const metadata: Metadata = {
+  title: "Alisa Kutsenko - The Play",
+  description: "...",
+};
+
 export default function Page() {
   return (
     <section className={style.section}>

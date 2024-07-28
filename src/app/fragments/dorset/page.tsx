@@ -1,4 +1,11 @@
+import { Metadata } from "next";
 import style from "./page.module.css";
+
+export const metadata: Metadata = {
+  title: "Alisa Kutsenko - Dorset",
+  description: "...",
+};
+
 export default function Page() {
   const rainImages = new Array(6)
     .fill(0)
